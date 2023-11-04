@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.gradient-hero {
+  background-image: url('home-hero-gradient.svg');
+  background-size: cover; /* Cover the entire element */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image */
+}
+
+.bg-lift-up {
+    background-position: right bottom 40px;
+}
+
+.transition-btn {
+  @apply transition-colors duration-100 
+}
+
+.transition-colors-long {
+  @apply transition-colors duration-300
+}
+
+.wallet-card-active {
+  @apply border-[2px] transition-btn bg-purple-200 border-purple-300 h-28 flex flex-col pl-4 justify-evenly rounded-xl w-[500px]
+}
+
+.wallet-card {
+  @apply border-[2px] transition-btn h-14 flex flex-col pl-4 justify-evenly rounded-xl border-purple-200 w-[500px]
+}
