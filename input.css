@@ -30,26 +30,40 @@
 }
 
 .card {
-  @apply h-14 border-[2px] flex flex-col cursor-pointer pl-4 justify-evenly rounded-xl w-[500px]
+  @apply h-14 border-[1px] flex flex-col cursor-pointer pl-4 justify-evenly rounded-xl w-[500px]
 }
 .wallet-card-active {
-  @apply border-[2px]  bg-purple-200 border-purple-300 card-active
+  @apply border-[1px]  bg-violet-100 border-violet-200 card-active
 }
 .exchange-card-active {
-  @apply border-[2px] bg-blue-100 border-blue-200 card-active
+  @apply border-[1px] bg-blue-100 border-blue-200 card-active
 }
+
+.explore-card-active {
+  @apply border-[1px] bg-orange-100 border-orange-200 bg-opacity-50 card-active
+}
+
 .wallet-card {
-  @apply h-14  border-purple-200 card
+  @apply h-14  border-violet-200 card
 }
 
 .exchange-card {
   @apply h-14 border-blue-200 card
 }
+
+.explore-card {
+  @apply h-14 border-orange-200 card
+}
+
 .sub-wallet-card {
   @apply hidden
 }
 
 .sub-exchange-card{
+  @apply hidden
+}
+
+.sub-explore-card{
   @apply hidden
 }
 .title-leading {
@@ -60,10 +74,18 @@
   @apply flex flex-auto items-center justify-evenly rounded-xl w-32 h-24
 }  
 
+.exchange-button-header {
+  @apply button-header justify-center place-items-center 
+}
+
 .shapes-image {
  @apply bg-no-repeat flex flex-row w-[72%] pt-20  rounded-3xl mt-44 h-[800px] justify-center items-center
 }
 
 .under-section-button {
-@apply flex justify-center place-items-center  rounded-lg text-white text-xl h-24 w-36 transition-btn 
+ @apply flex justify-center place-items-center  rounded-lg text-white text-xl h-24 w-36 transition-btn 
+}
+
+.nav-collapsible-button {
+ @apply hover:bg-slate-700 w-24 h-8 rounded-md flex place-items-center justify-center transition-btn 
 }

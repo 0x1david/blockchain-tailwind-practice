@@ -57,7 +57,7 @@ const getPriceChange = currency => {
 function returnCard(currency) {
     return `
         <a href=${currency.link}>
-            <div class="p-5 flex bg bg-cover transition-btn flex-col hover:bg-slate-100 bg-white h-full w-60 shadow-2xl rounded-lg ">
+            <div class="p-5 z-200 flex bg bg-cover transition-btn flex-col hover:bg-slate-100 bg-white h-full w-60 shadow-2xl rounded-lg ">
                 <div class="flex flex-row justify-between mb-3">
                     <img class="w-10 h-10" src=${currency.icon}>
                     <div class="gap-3 flex">
